@@ -18,8 +18,14 @@ public class App {
         }
         else if(option == 2){
             System.out.println("Enter the encrypted text to be decrypted");
+            String userText = scanner.nextLine();
+            System.out.println("Enter a key");
+            int key = scanner.nextInt();
+            Decrypt decrypt = new Decrypt( userText, key);
+            System.out.println(String.format("Your decrypted text is:  %s",decrypt.decryption()));
 
         }
+        else
 
     }
 }
