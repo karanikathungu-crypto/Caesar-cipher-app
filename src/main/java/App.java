@@ -8,6 +8,14 @@ public class App {
         int option = scanner.nextInt();
         scanner.nextLine();
 
+        if(option == 1){
+            System.out.println("Enter some text");
+            String userText = scanner.nextLine();
+            System.out.println("Enter a key");
+            int key = scanner.nextInt();
+            Encrypt encrypt = new Encrypt(userText,key);
+        }
+
 
     }
 }
