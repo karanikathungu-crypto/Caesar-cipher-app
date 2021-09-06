@@ -14,6 +14,7 @@ public class App {
             System.out.println("Enter a key");
             int key = scanner.nextInt();
             Encrypt encrypt = new Encrypt(userText,key);
+            System.out.println(String.format("Your encrypted text is:  %s",encrypt.encryption()));
         }
 
 
