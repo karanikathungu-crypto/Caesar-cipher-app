@@ -1,7 +1,7 @@
  class Encrypt {
 
-    private String userText;
-    private int key;
+    private String mUserText;
+    private int mKey;
 
    /* public static void main(String[] args) {
         String text = "Hey, how's it hanging?";
