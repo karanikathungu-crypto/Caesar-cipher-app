@@ -25,7 +25,9 @@ public class App {
             System.out.println(String.format("Your decrypted text is:  %s",decrypt.decryption()));
 
         }
-        else
+        else{
+            System.out.println("Reenter the text");
+        }
 
     }
 }
