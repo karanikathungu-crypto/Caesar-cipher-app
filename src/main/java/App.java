@@ -16,7 +16,10 @@ public class App {
             Encrypt encrypt = new Encrypt(userText,key);
             System.out.println(String.format("Your encrypted text is:  %s",encrypt.encryption()));
         }
+        else if(option == 2){
+            System.out.println("Enter the encrypted text to be decrypted");
 
+        }
 
     }
 }
