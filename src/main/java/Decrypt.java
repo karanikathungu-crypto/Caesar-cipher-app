@@ -1,6 +1,7 @@
 class Decrypt {
-    private String mUserText;
-    private int mKey;
+    private String userText;
+    private int key;
+    private String decryptedText;
    /* public static void main(String[] args) {
         String text = "Kh|/#krz*v#lw#kdqjlqjB";
         int key = 3;
