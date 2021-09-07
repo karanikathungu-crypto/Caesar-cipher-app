@@ -1,24 +1,35 @@
-class Decrypt {
-    private String userText;
-    private int key;
-    private String decryptedText;
+ public class Decrypt {
+     private String userText;
+     private int key;
+     private char c;
 
-    public Decrypt(String userText, int key){
-        this.userText = userText;
-        this.key = key;
+     public Decrypt(String userText, int key) {
+         this.userText = userText;
+         this.key = key;
+     }
+
+     public int getKey() {
+         return key;
+     }
+
+     public String getUserText() {
+         return userText;
+     }
+
+     public static String decryption(String userText, int key) {
+         StringBuffer output= new StringBuffer();
+         char[] chars = userText.toCharArray();
+         for (char c : chars) {
+             c -= key;
+             System.out.println(c);
+             output.append(c);
 
 
-    }
-   /* public static void main(String[] args) {
-        String text = "Kh|/#krz*v#lw#kdqjlqjB";
-        int key = 3;
-        char [] chars = text.toCharArray();
-        for(char c: chars ){
-            c -= key;
-            System.out.print(c);
 
-        }
+         }
+         return output.toString();
+     }
+ }
 
 
-    }*/
-}
+
