@@ -10,7 +10,15 @@
 
 
     }
-
+    public static void encryption(){
+        String userText;
+        int key;
+        char [] chars = userText.toCharArray();
+        for(char c: chars){
+            c+=key;
+            System.out.println(c);
+        }
+    }
    /* public static void main(String[] args) {
         String text = "Hey, how's it hanging?";
         int key = 3;
